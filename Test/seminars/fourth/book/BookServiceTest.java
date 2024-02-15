@@ -31,6 +31,7 @@ class BookServiceTest {
         assertThat(book)
                 .isNotNull()
                 .isInstanceOf(Book.class)
+                .hasFieldOrProperty("id")
                 .hasFieldOrProperty("title")
                 .hasFieldOrProperty("author");
     }
